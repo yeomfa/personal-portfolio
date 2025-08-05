@@ -47,7 +47,7 @@ const Hero = () => {
                 outlined
                 height="full"
                 logo={<CaretDoubleDownIcon size={20} />}
-                onClick={() => scrollTo(`#${Section.AboutMe}`)}
+                onClick={() => scrollTo(Section.AboutMe)}
               />
             </div>
           </div>

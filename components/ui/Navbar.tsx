@@ -5,8 +5,10 @@ import { useEffect, useState } from 'react';
 
 import { MoonStarsIcon, TranslateIcon } from '@phosphor-icons/react';
 
-import YeomLogo from '@/components/common/YeomLogo';
 import scrollTo from '@/utils/scrollTo';
+
+import YeomLogo from '@/components/common/YeomLogo';
+import { Section } from '@/types/Sections';
 
 const sections = [
   { id: 'hero', name: 'Home' },
@@ -48,8 +50,7 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleScroll = (id: string) => {
-    setActiveSection(id);
+  const handleScroll = (id: Section) => {
     scrollTo(id);
   };
 
@@ -80,7 +81,7 @@ const Navbar = () => {
                     </Link>
                   ) : (
                     <button
-                      onClick={() => handleScroll(`#${sec.id}`)}
+                      onClick={() => handleScroll(sec.id)}
                       className={`${
                         sec.id === activeSection ? activeClass : ''
                       } ${
