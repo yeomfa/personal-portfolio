@@ -25,7 +25,7 @@ const InfoCard = ({
       {logoPathName && (
         <Image src={logoPathName} width={60} height={60} alt={title} />
       )}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 pt-2">
         <h3 className="text-lg font-medium">{title}</h3>{' '}
         <span className="text-xs">{alias}</span>
       </div>

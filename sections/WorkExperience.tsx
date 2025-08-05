@@ -37,9 +37,9 @@ const academicInformation = [
 
 const WorkExperience = () => {
   return (
-    <div className="grid lg:grid-cols-2">
+    <div className="grid lg:grid-cols-2 pb-20">
       <SectionLayout sectionId={Section.WorkExperience} title="Work Experience">
-        <div className="py-8 px-2">
+        <div className="flex flex-col gap-6 py-8 px-2">
           {workExperience.map((academic) => (
             <InfoCard
               key={academic.id}

@@ -17,7 +17,7 @@ const Hero = () => {
             <span className="text-white text-3xl font-bold lg:text-5xl">
               Omar Fandiño
             </span>
-            <p className="text-white text-md lg:text-2xl">
+            <p className="text-white text-md text-sm md:text-md lg:text-2xl">
               Engineering. Software. Design.
             </p>
           </div>
