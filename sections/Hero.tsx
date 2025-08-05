@@ -8,9 +8,14 @@ import {
   LinkedinLogoIcon,
 } from '@phosphor-icons/react';
 
+import scrollTo from '@/utils/scrollTo';
+
 const Hero = () => {
   return (
-    <section id={Section.Hero} className="h-[calc(100vh-theme(spacing.16))]">
+    <section
+      id={Section.Hero}
+      className="h-[calc(100vh-theme(spacing.16))] scroll-mt-16"
+    >
       <div className="flex justify-center items-center h-full">
         <div className="grid grid-cols-[1fr_1fr_auto] grid-rows-1 gap-4">
           <div className="col-span-2 bg-primary flex flex-col justify-center items-center px-8 py-9 gap-2 lg:px-14 lg:py-16 lg:gap-6 select-none">
@@ -42,6 +47,7 @@ const Hero = () => {
                 outlined
                 height="full"
                 logo={<CaretDoubleDownIcon size={20} />}
+                onClick={() => scrollTo(`#${Section.AboutMe}`)}
               />
             </div>
           </div>

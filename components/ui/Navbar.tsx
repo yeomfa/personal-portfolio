@@ -1,14 +1,15 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { MoonStarsIcon, TranslateIcon } from '@phosphor-icons/react';
 
 import YeomLogo from '@/components/common/YeomLogo';
+import scrollTo from '@/utils/scrollTo';
 
 const sections = [
-  { id: 'hero', name: 'Hero' },
+  { id: 'hero', name: 'Home' },
   { id: 'about-me', name: 'About me' },
   { id: 'work-experience', name: 'Work Experience' },
   { id: 'skills', name: 'Skills' },
@@ -22,13 +23,34 @@ const activeClass = 'font-bold text-primary';
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('hero');
 
-  const handleScroll = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            if (id) setActiveSection(id);
+          }
+        });
+      },
+      {
+        rootMargin: '-50% 0px -50% 0px',
+        threshold: 0,
+      }
+    );
 
-      setActiveSection(id);
-    }
+    sections.forEach(({ id, isLink }) => {
+      if (isLink) return;
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handleScroll = (id: string) => {
+    setActiveSection(id);
+    scrollTo(id);
   };
 
   return (
@@ -58,7 +80,7 @@ const Navbar = () => {
                     </Link>
                   ) : (
                     <button
-                      onClick={() => handleScroll(sec.id)}
+                      onClick={() => handleScroll(`#${sec.id}`)}
                       className={`${
                         sec.id === activeSection ? activeClass : ''
                       } ${

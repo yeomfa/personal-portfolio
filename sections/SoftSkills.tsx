@@ -27,7 +27,7 @@ export const softSkills = [
 
 const SoftSkills = () => {
   return (
-    <SectionLayout sectionId={Section.SoftSkills} title="Skills">
+    <SectionLayout sectionId={Section.SoftSkills} title="Soft Skills">
       <div className="py-8 mb-20 grid gap-10 lg:grid-cols-2">
         {softSkills.map((skill) => (
           <CategoryCard key={skill.id} title={skill.title}></CategoryCard>

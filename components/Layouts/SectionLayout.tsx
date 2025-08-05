@@ -14,7 +14,7 @@ const SectionLayout = ({
   height = 'auto',
 }: Props) => {
   return (
-    <section id={sectionId} className={`h-${height} p-4`}>
+    <section id={sectionId} className={`h-${height} p-4 scroll-mt-16`}>
       <div className="border-b-2 border-primary">
         <h2 className="font-medium text-xl">{title}</h2>
       </div>
