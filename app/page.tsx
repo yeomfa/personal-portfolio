@@ -1,3 +1,4 @@
+import Footer from '@/components/ui/Footer';
 import AboutMe from '@/sections/AboutMe';
 import Hero from '@/sections/Hero';
 import Skills from '@/sections/Skills';
@@ -12,6 +13,7 @@ export default function Home() {
       <WorkExperience />
       <Skills />
       <SoftSkills />
+      <Footer />
     </main>
   );
 }
