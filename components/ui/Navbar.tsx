@@ -5,10 +5,9 @@ import { useEffect, useState } from 'react';
 
 import { MoonStarsIcon, TranslateIcon } from '@phosphor-icons/react';
 
-import scrollTo from '@/utils/scrollTo';
+import smoothScroll from '@/utils/smoothScroll';
 
 import YeomLogo from '@/components/common/YeomLogo';
-import { Section } from '@/types/Sections';
 
 const sections = [
   { id: 'hero', name: 'Home' },
@@ -50,8 +49,8 @@ const Navbar = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleScroll = (id: Section) => {
-    scrollTo(id);
+  const handleScroll = (id: string) => {
+    smoothScroll(id);
   };
 
   return (

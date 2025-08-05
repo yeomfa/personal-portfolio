@@ -8,7 +8,7 @@ import {
   LinkedinLogoIcon,
 } from '@phosphor-icons/react';
 
-import scrollTo from '@/utils/scrollTo';
+import smoothScroll from '@/utils/smoothScroll';
 
 const Hero = () => {
   return (
@@ -47,7 +47,7 @@ const Hero = () => {
                 outlined
                 height="full"
                 logo={<CaretDoubleDownIcon size={20} />}
-                onClick={() => scrollTo(Section.AboutMe)}
+                onClick={() => smoothScroll(Section.AboutMe)}
               />
             </div>
           </div>
