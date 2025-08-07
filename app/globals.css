@@ -14,7 +14,7 @@
   --primary-color: #4f77b2;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background-color);
   --color-foreground: var(--foreground-color);
   --color-primary: var(--primary-color);
