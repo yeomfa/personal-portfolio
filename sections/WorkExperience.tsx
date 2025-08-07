@@ -27,7 +27,7 @@ const academicInformation = [
   {
     id: 1,
     logoPathName: '/unimag-logo.svg',
-    title: 'Universidad del Magadalena',
+    title: 'Universidad del Magdalena',
     alias: '(Jan 18 - Dec 23)',
     subtitle: 'Ingeniería de Sistemas',
     location: 'Santa Marta, Colombia',
@@ -45,6 +45,7 @@ const WorkExperience = () => {
               key={academic.id}
               logoPathName={academic.logoPathName}
               title={academic.title}
+              subtitle={academic.subtitle}
               alias={academic.alias}
               location={academic.location}
               text={academic.text}
@@ -59,6 +60,7 @@ const WorkExperience = () => {
               key={academic.id}
               logoPathName={academic.logoPathName}
               title={academic.title}
+              subtitle={academic.subtitle}
               alias={academic.alias}
               location={academic.location}
               text={academic.text}
