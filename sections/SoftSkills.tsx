@@ -5,23 +5,23 @@ import { Section } from '@/types/Sections';
 export const softSkills = [
   {
     id: 1,
-    title: 'Resolución de problemas',
+    title: 'Problem solving',
   },
   {
     id: 2,
-    title: 'Comunicación efectiva',
+    title: 'Effective communication',
   },
   {
     id: 3,
-    title: 'Colaboración en equipo',
+    title: 'Team collaboration',
   },
   {
     id: 4,
-    title: 'Gestión del tiempo',
+    title: 'Time management',
   },
   {
     id: 5,
-    title: 'Adaptabilidad al cambio',
+    title: 'Adaptability to change',
   },
 ];
 

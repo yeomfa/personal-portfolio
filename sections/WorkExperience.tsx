@@ -29,7 +29,7 @@ const academicInformation = [
     logoPathName: '/unimag-logo.svg',
     title: 'Universidad del Magdalena',
     alias: '(Jan 18 - Dec 23)',
-    subtitle: 'Ingeniería de Sistemas',
+    subtitle: 'Systems engineering',
     location: 'Santa Marta, Colombia',
     text: `I studied engineering at the University of Magdalena, where I acquired a solid foundation in systems, technology and software development.`,
   },
