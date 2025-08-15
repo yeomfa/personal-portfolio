@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "imagePath": "https://yeomfa.github.io/vesto/public/vesto-favicon.png",
+    "title": "Vesto",
+    "technologies": ["html", "css", "javascript"],
+    "description": "Vesto is an application to solve optimization problems",
+    "repositoryPath": "https://github.com/yeomfa/vesto",
+    "liveSitePath": "https://yeomfa.github.io/vesto"
+  }
+]
