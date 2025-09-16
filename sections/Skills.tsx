@@ -1,6 +1,6 @@
 import CategoryCard from '@/components/common/CategoryCard';
 import Skill from '@/components/common/Skill';
-import SectionLayout from '@/components/Layouts/SectionLayout';
+import SectionLayout from '@/components/layouts/SectionLayout';
 import { Section } from '@/types/Sections';
 
 export const skills = [
