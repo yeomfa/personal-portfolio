@@ -54,7 +54,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky h-16 top-0 w-full mx-auto bg-background/80 backdrop-blur items-center">
+    <nav className="sticky h-16 top-0 w-full mx-auto bg-background/80 backdrop-blur items-center z-50">
       <div className="container h-full mx-auto mx-w-screen-xl px-6 py-4 flex justify-between items-center">
         <Link href={'/'} onClick={() => setActiveSection('home')}>
           <YeomLogo width={30} height={30} />
