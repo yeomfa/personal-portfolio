@@ -5,8 +5,8 @@
     "title": "Nexsh",
     "technologies": ["react", "nodejs"],
     "description": "Nexsh is a monolithic application that provides a modern browser-based command-line interface for executing various operations. It uses a custom React hook to manage the terminal interface and interacts with a Node.js API for database operations on documents, inspired by MongoDB.",
-    "repositoryPath": "https://github.com/yeomfa/gorilla-type",
-    "liveSitePath": "https://yeomfa.github.io/gorilla-type"
+    "repositoryPath": "https://github.com/yeomfa/nexsh",
+    "liveSitePath": ""
   },
   {
     "id": 2,
