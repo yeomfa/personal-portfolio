@@ -1,4 +1,4 @@
-import SectionLayout from '@/components/Layouts/SectionLayout';
+import SectionLayout from '@/components/layouts/SectionLayout';
 import { Section } from '@/types/Sections';
 
 import PersonalPhoto from '@/assets/images/Omar_Fandiño_pp.webp';

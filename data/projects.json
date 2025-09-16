@@ -1,11 +1,38 @@
 [
   {
     "id": 1,
-    "imagePath": "https://yeomfa.github.io/vesto/public/vesto-favicon.png",
+    "imagePath": "/covers/nexsh-cover.webp",
+    "title": "Nexsh",
+    "technologies": ["react", "nodejs"],
+    "description": "Nexsh is a monolithic application that provides a modern browser-based command-line interface for executing various operations. It uses a custom React hook to manage the terminal interface and interacts with a Node.js API for database operations on documents, inspired by MongoDB.",
+    "repositoryPath": "https://github.com/yeomfa/gorilla-type",
+    "liveSitePath": "https://yeomfa.github.io/gorilla-type"
+  },
+  {
+    "id": 2,
+    "imagePath": "/covers/vesto-cover.webp",
     "title": "Vesto",
     "technologies": ["html", "css", "javascript"],
-    "description": "Vesto is an application to solve optimization problems",
+    "description": "Vesto is a web application focused on solving optimization problems, specifically maximization and minimization tasks. It provides an intuitive interface to visualize each stage of the process until reaching the final result.",
     "repositoryPath": "https://github.com/yeomfa/vesto",
     "liveSitePath": "https://yeomfa.github.io/vesto"
+  },
+  {
+    "id": 3,
+    "imagePath": "/covers/personal-portfolio-cover.webp",
+    "title": "Personal Portfolio",
+    "technologies": ["nextjs"],
+    "description": "This is my personal portfolio, which you are currently browsing, a place where I can tell you abaout myself,publish my projects and much more.",
+    "repositoryPath": "https://github.com/yeomfa/personal-portfolio",
+    "liveSitePath": ""
+  },
+  {
+    "id": 4,
+    "imagePath": "/covers/gorilla-type-cover.webp",
+    "title": "GorillaType",
+    "technologies": ["html", "css", "javascript"],
+    "description": "GorillaType is a small web application inspired by Monkey Type, created as a personal challenge to build something different. It allows users to practice typing by writing popular phrases, with options to configure the interface color and switch between English and Spanish.",
+    "repositoryPath": "https://github.com/yeomfa/gorilla-type",
+    "liveSitePath": "https://yeomfa.github.io/gorilla-type"
   }
 ]

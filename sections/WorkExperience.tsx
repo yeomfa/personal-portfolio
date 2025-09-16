@@ -1,5 +1,5 @@
 import InfoCard from '@/components/common/InfoCard';
-import SectionLayout from '@/components/Layouts/SectionLayout';
+import SectionLayout from '@/components/layouts/SectionLayout';
 import { Section } from '@/types/Sections';
 
 const workExperience = [
