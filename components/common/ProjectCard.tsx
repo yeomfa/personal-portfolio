@@ -26,7 +26,7 @@ const ProjectCard = ({
   return (
     <article>
       {imagePath && (
-        <div className="relative w-full h-auto aspect-video overflow-hidden mb-4 border border-primary">
+        <div className="relative w-full h-auto aspect-video overflow-hidden mb-4 border-2 shadow border-primary rounded-md">
           <Image
             src={imagePath}
             fill

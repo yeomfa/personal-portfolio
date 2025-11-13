@@ -11,7 +11,7 @@ export default function Contact() {
       iconPath="/icons/custom/letter-heart.svg"
       iconSize={30}
     >
-      <div className="pt-8 pb-96">
+      <div className="pt-8 pb-60">
         <h2 className="text-2xl font-medium">
           Do you want to do amazing things together?
         </h2>

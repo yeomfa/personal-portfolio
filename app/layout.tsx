@@ -1,21 +1,11 @@
 import type { Metadata } from 'next';
-import { Inter, IBM_Plex_Serif, Outfit, Source_Sans_3 } from 'next/font/google';
+import { Inter, Source_Sans_3 } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/ui/Navbar';
 
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],
-});
-
-const ibmPlexSerif = IBM_Plex_Serif({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-});
-
-const outfit = Outfit({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
 });
 
 const SourceSans3 = Source_Sans_3({

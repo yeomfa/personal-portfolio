@@ -14,7 +14,7 @@ const AboutMe = () => {
         <Image
           src={PersonalPhoto}
           alt="Omar Fandiño"
-          className="w-full pb-8 md:w-70 lg:w-90 lg:pb-0"
+          className="w-full pb-8 md:w-70 lg:w-90 lg:pb-0 rounded-md"
         />
         <p>
           Hello,
