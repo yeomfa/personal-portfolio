@@ -1,5 +1,6 @@
 import Footer from '@/components/ui/Footer';
 import AboutMe from '@/sections/AboutMe';
+import Contact from '@/sections/Contact';
 import Hero from '@/sections/Hero';
 import Projects from '@/sections/Projects';
 import Skills from '@/sections/Skills';
@@ -15,6 +16,7 @@ export default function Home() {
       <Skills />
       <SoftSkills />
       <Projects />
+      <Contact />
       <Footer />
     </main>
   );
