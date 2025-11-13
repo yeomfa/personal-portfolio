@@ -37,6 +37,7 @@ export default function Contact() {
           </div>
 
           {/* CV */}
+          {/* TODO: Add download cv function */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-base lg:text-xl text-foreground/80">
             <p className="tracking-tight">Do you need my resume?</p>
             <button
