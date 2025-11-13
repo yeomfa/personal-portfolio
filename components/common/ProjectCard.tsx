@@ -36,7 +36,7 @@ const ProjectCard = ({
         </div>
       )}
       <div className="flex flex-col gap-5">
-        <h3 className="font-bold text-2xl">{title}</h3>
+        <h3 className="font-medium text-2xl">{title}</h3>
 
         {technologies.length > 0 && (
           <ul className="flex gap-3">

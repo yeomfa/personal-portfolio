@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, IBM_Plex_Serif } from 'next/font/google';
+import { Inter, IBM_Plex_Serif, Outfit, Source_Sans_3 } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/ui/Navbar';
 
@@ -9,6 +9,16 @@ const inter = Inter({
 });
 
 const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
+
+const SourceSans3 = Source_Sans_3({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
 });
@@ -24,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.variable} ${ibmPlexSerif.className} antialiased`}
+        className={`${inter.variable} ${SourceSans3.className} antialiased`}
       >
         <Navbar />
         <div className="container w-full mx-auto mx-w-screen-xl px-6">
