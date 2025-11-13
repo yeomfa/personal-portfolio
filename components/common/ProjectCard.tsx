@@ -26,7 +26,7 @@ const ProjectCard = ({
   return (
     <article>
       {imagePath && (
-        <div className="relative w-full h-auto aspect-video overflow-hidden mb-4 border border-primary">
+        <div className="relative w-full h-auto aspect-video overflow-hidden mb-4 border-2 shadow border-primary rounded-md">
           <Image
             src={imagePath}
             fill
@@ -36,7 +36,7 @@ const ProjectCard = ({
         </div>
       )}
       <div className="flex flex-col gap-5">
-        <h3 className="font-bold text-2xl">{title}</h3>
+        <h3 className="font-medium text-2xl">{title}</h3>
 
         {technologies.length > 0 && (
           <ul className="flex gap-3">

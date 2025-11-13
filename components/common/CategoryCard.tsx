@@ -3,10 +3,10 @@ type Props = {
   children?: React.ReactNode;
 };
 
-const CategoryCard = ({ title, children = <></> }: Props) => {
+const CategoryCard = ({ title, children }: Props) => {
   return (
-    <article className="border border-primary p-4">
-      <h3 className="font-semibold text-lg">{title}</h3>
+    <article className="flex flex-col justify-center border border-primary p-4 rounded-md">
+      <h3 className="font-medium text-lg">{title}</h3>
       {children && (
         <div className="mt-2 flex flex-wrap gap-2 items-center">{children}</div>
       )}

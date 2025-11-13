@@ -24,7 +24,7 @@ const Button = ({
     outlined
       ? 'border-2 border-primary text-primary hover:bg-primary hover:text-white'
       : 'bg-primary text-white hover:bg-primary/80'
-  } hover:cursor-pointer  p-2 w-${width} h-${height} flex items-center justify-center gap-2`;
+  } hover:cursor-pointer  p-4 w-${width} h-${height} flex items-center justify-center gap-2 rounded-md`;
 
   if (href)
     return (
