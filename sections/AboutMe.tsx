@@ -1,8 +1,11 @@
+'use client';
+
 import SectionLayout from '@/components/layouts/SectionLayout';
 import { Section } from '@/types/Sections';
 
 import PersonalPhoto from '@/assets/images/Omar_Fandiño_pp.webp';
 import Image from 'next/image';
+import smoothScroll from '@/utils/smoothScroll';
 
 const AboutMe = () => {
   return (
@@ -33,8 +36,13 @@ const AboutMe = () => {
           <br />
           <br />
           If you like what you see on this website, please don&#39;t hesitate to{' '}
-          <span className="text-primary font-semibold">contact me</span>.
-          I&#39;d love to hear your ideas.
+          <span
+            className="text-primary font-semibold cursor-pointer"
+            onClick={() => smoothScroll('contact')}
+          >
+            contact me
+          </span>
+          . I&#39;d love to hear your ideas.
         </p>
       </div>
     </SectionLayout>
