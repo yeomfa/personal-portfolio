@@ -43,7 +43,7 @@ const ProjectCard = ({
             {technologies.map((tech) => (
               <li key={tech}>
                 <Image
-                  src={`/icons/${tech}.svg`}
+                  src={`/icons/technologies/${tech}.svg`}
                   width={20}
                   height={20}
                   alt={tech}

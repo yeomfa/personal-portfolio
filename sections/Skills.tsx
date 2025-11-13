@@ -8,46 +8,70 @@ export const skills = [
     id: 'web-dev',
     title: 'Web Development',
     technologies: [
-      { id: 'html', name: 'HTML', icon: '/icons/html.svg' },
-      { id: 'css', name: 'CSS', icon: '/icons/css.svg' },
-      { id: 'javascript', name: 'JavaScript', icon: '/icons/javascript.svg' },
-      { id: 'typescript', name: 'TypeScript', icon: '/icons/typescript.svg' },
-      { id: 'php', name: 'PHP', icon: '/icons/php.svg' },
-      { id: 'laravel', name: 'Laravel', icon: '/icons/laravel.svg' },
+      { id: 'html', name: 'HTML', icon: '/icons/technologies/html.svg' },
+      { id: 'css', name: 'CSS', icon: '/icons/technologies/css.svg' },
+      {
+        id: 'javascript',
+        name: 'JavaScript',
+        icon: '/icons/technologies/javascript.svg',
+      },
+      {
+        id: 'typescript',
+        name: 'TypeScript',
+        icon: '/icons/technologies/typescript.svg',
+      },
+      { id: 'php', name: 'PHP', icon: '/icons/technologies/php.svg' },
+      {
+        id: 'laravel',
+        name: 'Laravel',
+        icon: '/icons/technologies/laravel.svg',
+      },
     ],
   },
   {
     id: 'frontend-frameworks',
     title: 'Frontend Javascript Frameworks',
     technologies: [
-      { id: 'react', name: 'React', icon: '/icons/react.svg' },
-      { id: 'nextjs', name: 'Next.js', icon: '/icons/nextjs.svg' },
+      { id: 'react', name: 'React', icon: '/icons/technologies/react.svg' },
+      { id: 'nextjs', name: 'Next.js', icon: '/icons/technologies/nextjs.svg' },
     ],
   },
   {
     id: 'backend-frameworks',
     title: 'Backend Javascript Frameworks',
     technologies: [
-      { id: 'nodejs', name: 'Node.js', icon: '/icons/nodejs.svg' },
-      { id: 'express', name: 'Express', icon: '/icons/express.svg' },
+      { id: 'nodejs', name: 'Node.js', icon: '/icons/technologies/nodejs.svg' },
+      {
+        id: 'express',
+        name: 'Express',
+        icon: '/icons/technologies/express.svg',
+      },
     ],
   },
   {
     id: 'database-management',
     title: 'Database Management',
     technologies: [
-      { id: 'mongodb', name: 'MongoDB', icon: '/icons/mongodb.svg' },
-      { id: 'mysql', name: 'MySQL', icon: '/icons/mysql.svg' },
-      { id: 'supabase', name: 'Supabase', icon: '/icons/supabase.svg' },
+      {
+        id: 'mongodb',
+        name: 'MongoDB',
+        icon: '/icons/technologies/mongodb.svg',
+      },
+      { id: 'mysql', name: 'MySQL', icon: '/icons/technologies/mysql.svg' },
+      {
+        id: 'supabase',
+        name: 'Supabase',
+        icon: '/icons/technologies/supabase.svg',
+      },
     ],
   },
   {
     id: 'devops',
     title: 'Development and Operations',
     technologies: [
-      { id: 'git', name: 'GIT', icon: '/icons/git.svg' },
-      { id: 'docker', name: 'Docker', icon: '/icons/docker.svg' },
-      { id: 'azure', name: 'Azure', icon: '/icons/azure.svg' },
+      { id: 'git', name: 'GIT', icon: '/icons/technologies/git.svg' },
+      { id: 'docker', name: 'Docker', icon: '/icons/technologies/docker.svg' },
+      { id: 'azure', name: 'Azure', icon: '/icons/technologies/azure.svg' },
     ],
   },
 ];
