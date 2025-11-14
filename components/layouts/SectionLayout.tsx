@@ -31,8 +31,9 @@ export default function SectionLayout({
           {iconPath && (
             <Image
               src={iconPath}
-              height={iconSize}
-              width={iconSize}
+              height="0"
+              width="0"
+              style={{ width: iconSize, height: iconSize }}
               alt="Section icon"
             />
           )}

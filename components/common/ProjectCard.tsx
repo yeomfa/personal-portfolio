@@ -26,13 +26,17 @@ const ProjectCard = ({
   return (
     <article>
       {imagePath && (
-        <div className="relative w-full h-auto aspect-video overflow-hidden mb-4 border-2 shadow border-primary rounded-md">
+        <div className="relative w-full aspect-video overflow-hidden mb-4 border-2 shadow border-primary rounded-md">
           <Image
             src={imagePath}
             fill
             alt={title}
             className="object-cover"
-          ></Image>
+            sizes="(max-width: 768px) 100vw,
+         (max-width: 1280px) 90vw,
+         1200px"
+            priority
+          />
         </div>
       )}
       <div className="flex flex-col gap-5">

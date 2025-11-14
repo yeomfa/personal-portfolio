@@ -15,7 +15,7 @@ const AboutMe = () => {
           <Image
             src={PersonalPhoto}
             alt="Omar Fandiño"
-            className="rounded-full border border-white"
+            className="rounded-full"
           />
         </div>
 
