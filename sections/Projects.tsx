@@ -7,7 +7,7 @@ import projects from '@/data/projects.json';
 const Projects = () => {
   return (
     <SectionLayout sectionId={Section.Projects} title="Projects">
-      <div className="my-20 mb-100 grid gap-30 lg:grid-cols-2">
+      <div className="my-20 mb-20 grid gap-30 lg:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

@@ -46,7 +46,6 @@ export default function Contact() {
             >
               {/* Email icon */}
               <EnvelopeSimpleIcon
-                weight="bold"
                 size={28}
                 className="text-primary group-hover:text-primary/80 transition-colors"
               />
@@ -68,15 +67,14 @@ export default function Contact() {
               >
                 <span className="text-2xl">+57 302 268 8904</span>
                 <CopyIcon
-                  weight="bold"
-                  size={22}
+                  size={24}
                   className="text-primary hover:text-primary/80 transition-colors"
                 />
               </button>
 
               {/* Location */}
               <div className="flex items-center gap-1 text-xl">
-                <MapPinIcon weight="bold" className="text-primary" />
+                <MapPinIcon size={24} className="text-primary" />
                 <span className="text-gray-500">Colombia</span>
               </div>
             </div>
@@ -94,7 +92,7 @@ export default function Contact() {
               className={`inline-flex items-center gap-2 font-medium text-primary hover:text-primary/80 transition-colors cursor-pointer ${pulseClasses}`}
             >
               <span>Download here</span>
-              <FilePdfIcon weight="bold" size={20} />
+              <FilePdfIcon size={24} />
             </button>
           </div>
         </div>

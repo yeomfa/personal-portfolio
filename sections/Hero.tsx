@@ -18,8 +18,8 @@ export default function Hero() {
         {/* Content */}
         <div className="relative z-10 max-w-3xl text-center space-y-6 pb-15">
           {/* Intro */}
-          <p className="text-3xl lg:text-4xl tracking-widest text-primary">
-            Hey, I’m <span className="font-medium">Omar</span>
+          <p className="text-3xl lg:text-4xl text-primary">
+            Hey, I’m <span className="font-semibold">Omar</span>
           </p>
 
           {/* Roles */}
