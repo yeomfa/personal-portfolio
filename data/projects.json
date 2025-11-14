@@ -21,8 +21,8 @@
     "id": 3,
     "imagePath": "/covers/personal-portfolio-cover.webp",
     "title": "Personal Portfolio",
-    "technologies": ["nextjs"],
-    "description": "This is my personal portfolio, which you are currently browsing, a place where I can tell you abaout myself,publish my projects and much more.",
+    "technologies": ["nextjs", "tailwindcss"],
+    "description": "This is my personal portfolio, which you are currently browsing, a place where I can tell you abaout myself, publish my projects and much more.",
     "repositoryPath": "https://github.com/yeomfa/personal-portfolio",
     "liveSitePath": ""
   },
