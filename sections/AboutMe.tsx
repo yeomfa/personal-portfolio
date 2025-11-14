@@ -11,11 +11,14 @@ const AboutMe = () => {
   return (
     <SectionLayout sectionId={Section.AboutMe} title="About me">
       <div className="grid grid-rows-[1fr, auto] py-8 mb-20 place-items-center lg:grid-cols-2 lg:grid-rows-1 lg:py-10">
-        <Image
-          src={PersonalPhoto}
-          alt="Omar Fandiño"
-          className="w-full pb-8 md:w-70 lg:w-90 lg:pb-0 rounded-md"
-        />
+        <div className="relative w-full md:w-70 lg:w-90 p-[3px] rounded-full bg-gradient-to-br from-primary/80 to-primary/20">
+          <Image
+            src={PersonalPhoto}
+            alt="Omar Fandiño"
+            className="rounded-full border border-white"
+          />
+        </div>
+
         <p>
           Hello,
           <br />
