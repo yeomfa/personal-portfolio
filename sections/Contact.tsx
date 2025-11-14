@@ -37,7 +37,7 @@ export default function Contact() {
           together.
         </h2>
 
-        <div className="mt-20 font-medium grid grid-cols-1 w-5xl place-content-center  gap-y-20 lg:grid-cols-2 lg:grid-rows-2">
+        <div className="mt-20 font-medium grid grid-cols-1 place-content-center  gap-y-20 lg:grid-cols-2 lg:grid-rows-2">
           {/* Email (mailto)  */}
           <div className="flex items-center justify-center">
             <a
