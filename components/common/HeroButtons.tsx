@@ -1,5 +1,5 @@
 import Button from '@/components/common/Button';
-import { Section } from '@/types/Sections';
+import { Profile, Section } from '@/types/Sections';
 import smoothScroll from '@/utils/smoothScroll';
 import {
   GithubLogoIcon,
@@ -11,12 +11,12 @@ export default function HeroButtons() {
   return (
     <div className="flex items-center gap-4">
       {/* GitHub */}
-      <Button href="https://github.com/yeomfa" external circle>
+      <Button href={Profile.GitHub} external circle>
         <GithubLogoIcon weight="bold" />
       </Button>
 
       {/* LinkedIn */}
-      <Button href="https://linkedin.com/in/yeomfa" external circle>
+      <Button href={Profile.LinkedIn} external circle>
         <LinkedinLogoIcon weight="bold" />
       </Button>
 
