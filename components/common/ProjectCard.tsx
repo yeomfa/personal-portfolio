@@ -28,9 +28,9 @@ export default function ProjectCard({
         group
         rounded-xl border border-primary/20
         bg-background/40 backdrop-blur-sm
-        p-5 transition-all
-        hover:border-primary
-        hover:shadow-[0_6px_30px_rgba(0,0,0,0.08)]
+        p-5 transition-all duration-300
+        hover:border-primary/60 hover:shadow-lg hover:shadow-primary/5
+        animate-fade-in
       "
     >
       {/* Imagen */}
@@ -41,7 +41,7 @@ export default function ProjectCard({
             fill
             alt={title}
             className="
-              object-cover transition-transform duration-500
+              object-cover transition-transform duration-300
               group-hover:scale-105
             "
             sizes="(max-width: 768px) 100vw,
