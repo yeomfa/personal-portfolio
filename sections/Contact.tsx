@@ -87,7 +87,7 @@ export default function Contact() {
             <button
               onClick={() => {
                 // Redirect to CV file
-                window.location.href = '/resources/omar-fandino-cv.pdf';
+                window.open('/resources/omar-fandino-cv.pdf', '_blank');
               }}
               className={`inline-flex items-center gap-2 font-medium text-primary hover:text-primary/80 transition-colors cursor-pointer ${pulseClasses}`}
             >
