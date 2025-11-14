@@ -10,32 +10,43 @@ type Props = {
   iconSize?: number;
 };
 
-const SectionLayout = ({
+export default function SectionLayout({
   sectionId,
   children,
   title,
   height = 'auto',
   iconPath,
-  iconSize,
-}: Props) => {
+  iconSize = 24,
+}: Props) {
   return (
-    <section id={sectionId} className={`h-${height} p-4 scroll-mt-16`}>
-      <div className="border-b-2 border-primary">
+    <section
+      id={sectionId}
+      className={`relative h-${height} px-4 py-10 scroll-mt-24`}
+    >
+      {/* Header container */}
+      <div className="inline-flex flex-col">
+        {/* Title row */}
         <h2 className="font-medium text-xl flex items-center gap-2">
-          {title}{' '}
+          {title}
           {iconPath && (
             <Image
               src={iconPath}
-              height={iconSize}
-              width={iconSize}
+              height="0"
+              width="0"
+              style={{ width: iconSize, height: iconSize }}
               alt="Section icon"
             />
           )}
         </h2>
+
+        {/* Extended underline */}
+        <div className="mt-2 -ml-2 -mr-40">
+          <div className="h-[3px] bg-gradient-to-r from-primary to-transparent" />
+        </div>
       </div>
-      {children}
+
+      {/* Section content */}
+      <div className="pt-8">{children}</div>
     </section>
   );
-};
-
-export default SectionLayout;
+}

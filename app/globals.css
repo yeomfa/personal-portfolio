@@ -3,7 +3,7 @@
 :root {
   --background-color: #faf9f0;
   --foreground-color: #171717;
-  --primary-color: #4f77b2;
+  --primary-color: #2979ff;
   --white-color: #ffffff;
 }
 
@@ -11,7 +11,7 @@
 .dark {
   --background-color: #171717;
   --foreground-color: #faf9f0;
-  --primary-color: #4f77b2;
+  --primary-color: #2979ff;
 }
 
 @theme {

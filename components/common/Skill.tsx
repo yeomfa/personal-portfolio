@@ -8,7 +8,15 @@ type Props = {
 const Skill = ({ name, icon }: Props) => {
   return (
     <div className="flex gap-2 items-center justify-center p-2">
-      {icon && <Image src={icon} alt={name} width={20} height={20} />}
+      {icon && (
+        <Image
+          src={icon}
+          alt={name}
+          width="0"
+          height="0"
+          style={{ width: 20, height: 20 }}
+        />
+      )}
       <span className="text-md text-center">{name}</span>
     </div>
   );

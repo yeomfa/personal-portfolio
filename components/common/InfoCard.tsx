@@ -23,7 +23,13 @@ const InfoCard = ({
   return (
     <article className="flex flex-col py-4 px-4">
       {logoPathName && (
-        <Image src={logoPathName} width={60} height={60} alt={title} />
+        <Image
+          src={logoPathName}
+          style={{ height: 60, width: 60 }}
+          width="0"
+          height="0"
+          alt={title}
+        />
       )}
       <div className="flex items-center gap-2 pt-2">
         <h3 className="text-xl font-medium">{title}</h3>{' '}

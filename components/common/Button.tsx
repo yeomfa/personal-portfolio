@@ -1,47 +1,59 @@
+'use client';
+
 import Link from 'next/link';
-import React, { JSX } from 'react';
+import { ReactNode } from 'react';
 
 type Props = {
-  text?: string;
-  logo?: JSX.Element;
-  width?: string;
-  height?: string;
-  href?: string;
-  outlined?: boolean;
-  onClick?: () => void;
+  href?: string; // Internal or external link
+  onClick?: () => void; // Handler for button mode
+  children: ReactNode; // Content (icons, text)
+  circle?: boolean; // Circle mode for icons
+  className?: string; // Extra classes
+  external?: boolean; // Force external <a> type
 };
 
-const Button = ({
-  text = '',
-  logo = <></>,
-  width = 'auto',
-  height = 'auto',
-  href = '',
-  outlined = false,
-  onClick = () => {},
-}: Props) => {
-  const styles = `${
-    outlined
-      ? 'border-2 border-primary text-primary hover:bg-primary hover:text-white'
-      : 'bg-primary text-white hover:bg-primary/80'
-  } hover:cursor-pointer  p-4 w-${width} h-${height} flex items-center justify-center gap-2 rounded-md`;
+export default function Button({
+  href,
+  onClick,
+  children,
+  circle = false,
+  className = '',
+  external,
+}: Props) {
+  const base =
+    'flex items-center justify-center transition rounded-full font-medium cursor-pointer';
+  const size = circle ? 'w-11 h-11' : 'h-11 px-4';
+  const styles =
+    'border border-gray-300 hover:border-primary hover:text-primary';
 
-  if (href)
+  const combined = `${base} ${size} ${styles} ${className}`;
+
+  // Case 1: Internal or external link
+  if (href) {
+    if (external) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={combined}
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
-      <Link href={href} target="blank">
-        <div className={styles}>
-          {logo}
-          {text}
-        </div>
+      <Link href={href} className={combined}>
+        {children}
       </Link>
     );
+  }
 
+  // Case 2: Button mode
   return (
-    <button className={styles} onClick={onClick}>
-      {logo}
-      {text}
+    <button onClick={onClick} className={combined}>
+      {children}
     </button>
   );
-};
-
-export default Button;
+}

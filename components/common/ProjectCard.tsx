@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
 import {
   ArrowSquareOutIcon,
   GithubLogoIcon,
@@ -15,62 +14,94 @@ type Props = {
   technologies?: string[];
 };
 
-const ProjectCard = ({
+export default function ProjectCard({
   title,
   description = '',
   repositoryPath = '',
   liveSitePath = '',
   imagePath = '',
   technologies = [],
-}: Props) => {
+}: Props) {
   return (
-    <article>
+    <article
+      className="
+        group
+        rounded-xl border border-primary/20
+        bg-background/40 backdrop-blur-sm
+        p-5 transition-all
+        hover:border-primary
+        hover:shadow-[0_6px_30px_rgba(0,0,0,0.08)]
+      "
+    >
+      {/* Imagen */}
       {imagePath && (
-        <div className="relative w-full h-auto aspect-video overflow-hidden mb-4 border-2 shadow border-primary rounded-md">
+        <div className="relative w-full aspect-video overflow-hidden mb-4 rounded-lg border border-primary/20">
           <Image
             src={imagePath}
             fill
             alt={title}
-            className="object-cover"
-          ></Image>
+            className="
+              object-cover transition-transform duration-500
+              group-hover:scale-105
+            "
+            sizes="(max-width: 768px) 100vw,
+                   (max-width: 1280px) 90vw,
+                   1200px"
+            priority
+          />
         </div>
       )}
-      <div className="flex flex-col gap-5">
-        <h3 className="font-medium text-2xl">{title}</h3>
 
+      <div className="flex flex-col gap-4">
+        {/* Title */}
+        <h3 className="font-semibold text-xl tracking-tight">{title}</h3>
+
+        {/* Technologies */}
         {technologies.length > 0 && (
-          <ul className="flex gap-3">
+          <ul className="flex flex-wrap gap-2">
             {technologies.map((tech) => (
-              <li key={tech}>
+              <li
+                key={tech}
+                className="px-2 py-1 rounded-md text-xs font-medium text-primary/90 flex gap-1 justify-center items-center"
+              >
                 <Image
                   src={`/icons/technologies/${tech}.svg`}
-                  width={20}
-                  height={20}
+                  width={13}
+                  height={13}
                   alt={tech}
                 />
+                {tech}
               </li>
             ))}
           </ul>
         )}
 
-        <p>{description}</p>
+        {/* Description */}
+        <p className="text-sm leading-relaxed opacity-90">{description}</p>
 
-        <div className="flex gap-4 text-2xl">
+        {/* Links */}
+        <div className="flex gap-4 text-2xl mt-1">
           {repositoryPath && (
-            <Link href={repositoryPath} className="text-primary" target="blank">
-              <GithubLogoIcon weight="bold" />
+            <Link
+              href={repositoryPath}
+              className="text-primary transition-opacity hover:opacity-70"
+              target="_blank"
+            >
+              <GithubLogoIcon />
             </Link>
           )}
 
           {liveSitePath && (
-            <Link href={liveSitePath} className="text-primary" target="blank">
-              <ArrowSquareOutIcon weight="bold" />
+            <Link
+              href={liveSitePath}
+              className="text-primary transition-opacity hover:opacity-70"
+              target="_blank"
+            >
+              <ArrowSquareOutIcon />
             </Link>
           )}
         </div>
       </div>
     </article>
   );
-};
-
-export default ProjectCard;
+}
