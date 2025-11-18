@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Source_Sans_3 } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/ui/Navbar';
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -22,14 +23,16 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${SourceSans3.className} antialiased`}
       >
-        <Navbar />
-        <div className="container w-full mx-auto mx-w-screen-xl px-6">
-          {children}
-        </div>
+        <ThemeProvider>
+          <Navbar />
+          <div className="container w-full mx-auto mx-w-screen-xl px-6">
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

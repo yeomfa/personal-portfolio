@@ -14,7 +14,7 @@ const Skill = ({ name, icon }: Props) => {
           alt={name}
           width="0"
           height="0"
-          style={{ width: 20, height: 20 }}
+          style={{ width: 25, height: 25 }}
         />
       )}
       <span className="text-md text-center">{name}</span>

@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -24,14 +25,15 @@ export default function ProjectCard({
 }: Props) {
   return (
     <article
-      className="
+      className={`
         group
         rounded-xl border border-primary/20
-        bg-background/40 backdrop-blur-sm
         p-5 transition-all duration-300
         hover:border-primary/60 hover:shadow-lg hover:shadow-primary/5
         animate-fade-in
-      "
+
+        dark:bg-gradient-to-l from-transparent to-primary/10
+      `}
     >
       {/* Imagen */}
       {imagePath && (
@@ -66,8 +68,8 @@ export default function ProjectCard({
               >
                 <Image
                   src={`/icons/technologies/${tech}.svg`}
-                  width={13}
-                  height={13}
+                  width={15}
+                  height={15}
                   alt={tech}
                 />
                 {tech}

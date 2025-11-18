@@ -3,11 +3,12 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import { MoonStarsIcon, TranslateIcon } from '@phosphor-icons/react';
+import { TranslateIcon } from '@phosphor-icons/react';
 
 import smoothScroll from '@/utils/smoothScroll';
 
 import YeomLogo from '@/components/common/YeomLogo';
+import ThemeChanger from '@/components/common/ThemeChanger';
 
 const sections = [
   { id: 'hero', name: 'Home' },
@@ -60,7 +61,7 @@ const Navbar = () => {
           <YeomLogo width={30} height={30} />
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 text-foreground">
           <ul className="gap-6 text-sm font-regular items-center hidden lg:flex">
             {sections.map((sec) => {
               return (
@@ -69,9 +70,7 @@ const Navbar = () => {
                     <Link
                       href={sec?.path}
                       className={
-                        sec?.isDisabled
-                          ? 'pointer-events-none text-gray-500'
-                          : ''
+                        sec?.isDisabled ? 'pointer-events-none text-grey' : ''
                       }
                       aria-disabled={sec?.isDisabled}
                       tabIndex={sec?.isDisabled ? -1 : undefined}
@@ -84,7 +83,7 @@ const Navbar = () => {
                       className={`${
                         sec.id === activeSection ? activeClass : ''
                       } ${
-                        sec?.isDisabled ? 'text-gray-400' : ''
+                        sec?.isDisabled ? 'text-grey' : ''
                       } hover:text-primary transition hover:cursor-pointer`}
                     >
                       {sec.name}
@@ -94,9 +93,8 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <button className="bg-primary text-white p-1 rounded-md hover:bg-primary/80 hover:cursor-pointer">
-            <MoonStarsIcon size={20} />
-          </button>
+          {/* Change theme */}
+          <ThemeChanger />
           <button className="p-1 hover:cursor-pointer hover:bg-gray-200 rounded-md">
             <TranslateIcon size={20} />
           </button>

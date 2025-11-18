@@ -23,7 +23,9 @@ export default function HeroButtons() {
       {/* Scroll Button */}
       <Button
         onClick={() => smoothScroll(Section.AboutMe)}
-        className="border-primary text-primary px-3 hover:bg-primary hover:text-white"
+        className={`
+          border-primary text-primary px-3 hover:bg-primary hover:text-white dark:bg-gradient-to-l from-transparent to-primary/10
+        `}
       >
         <ArrowDownIcon weight="bold" />
         <span className="ml-2">About me</span>

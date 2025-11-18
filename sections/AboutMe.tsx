@@ -30,11 +30,10 @@ const AboutMe = () => {
           <br />
           <br />I have always loved creating and learning new things. That
           curiosity led me to study{' '}
-          <span className="font-semibold">engineering</span>. Computers were
-          love at first sight: discovering that you can build amazing things
-          with numbers and letters made me want to become a{' '}
-          <span className="font-semibold">developer</span>. And since I also
-          like everything I do to look incredible, I ended up becoming a{' '}
+          <span className="font-semibold">engineering</span>. Discovering that
+          you can build amazing things with numbers and letters made me want to
+          become a <span className="font-semibold">developer</span>. And since I
+          also like everything I do to look incredible, I ended up becoming a{' '}
           <span className="font-semibold">designer</span>.
           <br />
           <br />
