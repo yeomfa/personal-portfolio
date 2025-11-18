@@ -24,7 +24,7 @@ export default function Button({
     'flex items-center justify-center transition rounded-full font-medium cursor-pointer';
   const size = circle ? 'w-11 h-11' : 'h-11 px-4';
   const styles =
-    'border border-gray-300 hover:border-primary hover:text-primary';
+    'border border-border-grey hover:border-primary hover:text-primary';
 
   const combined = `${base} ${size} ${styles} ${className}`;
 

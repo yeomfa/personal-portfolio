@@ -44,7 +44,7 @@ const InfoCard = ({
         </div>
       )}
 
-      <p className="pt-4 text-gray-700">{text}</p>
+      <p className="pt-4 text-grey">{text}</p>
     </article>
   );
 };

@@ -3,7 +3,7 @@
     "id": 1,
     "imagePath": "/covers/nexsh-cover.webp",
     "title": "Nexsh",
-    "technologies": ["react", "nodejs"],
+    "technologies": ["react", "nodejs", "express"],
     "description": "Nexsh is a monolithic application that provides a modern browser-based command-line interface for executing various operations. It uses a custom React hook to manage the terminal interface and interacts with a Node.js API for database operations on documents, inspired by MongoDB.",
     "repositoryPath": "https://github.com/yeomfa/nexsh",
     "liveSitePath": ""
@@ -21,7 +21,7 @@
     "id": 3,
     "imagePath": "/covers/personal-portfolio-cover.webp",
     "title": "Personal Portfolio",
-    "technologies": ["nextjs", "tailwindcss"],
+    "technologies": ["nextjs", "tailwindcss", "typescript"],
     "description": "This is my personal portfolio, which you are currently browsing, a place where I can tell you abaout myself, publish my projects and much more.",
     "repositoryPath": "https://github.com/yeomfa/personal-portfolio",
     "liveSitePath": ""

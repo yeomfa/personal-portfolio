@@ -1,3 +1,6 @@
+'use client';
+import { useTheme } from 'next-themes';
+
 type Props = {
   title: string;
   icon?: React.ReactNode;
@@ -5,15 +8,22 @@ type Props = {
 };
 
 const CategoryCard = ({ title, icon, children }: Props) => {
+  const { resolvedTheme = 'dark' } = useTheme();
+
+  const gradientClasses =
+    resolvedTheme === 'dark'
+      ? 'bg-gradient-to-l from-transparent to-primary/10'
+      : '';
+
   return (
     <article
-      className="
+      className={`
         group relative flex flex-col p-6 rounded-md border border-primary/30 
-        from-primary/5 to-transparent
         transition-all duration-300 
         hover:border-primary/60 hover:shadow-lg hover:shadow-primary/5
         animate-fade-in
-      "
+        ${gradientClasses}
+      `}
     >
       {/* Title */}
       <div className="flex items-center gap-2">

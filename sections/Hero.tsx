@@ -23,12 +23,12 @@ export default function Hero() {
           </p>
 
           {/* Roles */}
-          <h1 className="text-4xl lg:text-5xl font-medium text-gray-900">
+          <h1 className="text-4xl lg:text-5xl font-medium text-foreground">
             Engineer. Developer. Designer.
           </h1>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-gray-600">
+          <p className="text-lg sm:text-xl text-grey">
             I create digital experiences with clean code, thoughtful design, and
             a focus on performance.
           </p>

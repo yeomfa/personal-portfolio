@@ -3,11 +3,12 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
-import { MoonStarsIcon, TranslateIcon } from '@phosphor-icons/react';
+import { TranslateIcon } from '@phosphor-icons/react';
 
 import smoothScroll from '@/utils/smoothScroll';
 
 import YeomLogo from '@/components/common/YeomLogo';
+import ThemeChanger from '@/components/common/ThemeChanger';
 
 const sections = [
   { id: 'hero', name: 'Home' },
@@ -94,9 +95,8 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <button className="bg-primary text-white p-1 rounded-md hover:bg-primary/80 hover:cursor-pointer">
-            <MoonStarsIcon size={20} />
-          </button>
+          {/* Change theme */}
+          <ThemeChanger />
           <button className="p-1 hover:cursor-pointer hover:bg-gray-200 rounded-md">
             <TranslateIcon size={20} />
           </button>
