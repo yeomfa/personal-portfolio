@@ -1,5 +1,4 @@
 'use client';
-import { useTheme } from 'next-themes';
 
 type Props = {
   title: string;
@@ -8,13 +7,6 @@ type Props = {
 };
 
 const CategoryCard = ({ title, icon, children }: Props) => {
-  const { resolvedTheme = 'dark' } = useTheme();
-
-  const gradientClasses =
-    resolvedTheme === 'dark'
-      ? 'bg-gradient-to-l from-transparent to-primary/10'
-      : '';
-
   return (
     <article
       className={`
@@ -22,7 +14,7 @@ const CategoryCard = ({ title, icon, children }: Props) => {
         transition-all duration-300 
         hover:border-primary/60 hover:shadow-lg hover:shadow-primary/5
         animate-fade-in
-        ${gradientClasses}
+        dark:bg-gradient-to-l from-transparent to-primary/10
       `}
     >
       {/* Title */}

@@ -6,16 +6,8 @@ import {
   LinkedinLogoIcon,
   ArrowDownIcon,
 } from '@phosphor-icons/react';
-import { useTheme } from 'next-themes';
 
 export default function HeroButtons() {
-  const { resolvedTheme = 'dark' } = useTheme();
-
-  const gradientClasses =
-    resolvedTheme === 'dark'
-      ? 'bg-gradient-to-l from-transparent to-primary/10'
-      : '';
-
   return (
     <div className="flex items-center gap-4">
       {/* GitHub */}
@@ -32,8 +24,7 @@ export default function HeroButtons() {
       <Button
         onClick={() => smoothScroll(Section.AboutMe)}
         className={`
-          border-primary text-primary px-3 hover:bg-primary hover:text-white
-          ${gradientClasses}
+          border-primary text-primary px-3 hover:bg-primary hover:text-white dark:bg-gradient-to-l from-transparent to-primary/10
         `}
       >
         <ArrowDownIcon weight="bold" />

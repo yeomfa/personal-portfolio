@@ -61,7 +61,7 @@ const Navbar = () => {
           <YeomLogo width={30} height={30} />
         </Link>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 text-foreground">
           <ul className="gap-6 text-sm font-regular items-center hidden lg:flex">
             {sections.map((sec) => {
               return (
@@ -70,9 +70,7 @@ const Navbar = () => {
                     <Link
                       href={sec?.path}
                       className={
-                        sec?.isDisabled
-                          ? 'pointer-events-none text-gray-500'
-                          : ''
+                        sec?.isDisabled ? 'pointer-events-none text-grey' : ''
                       }
                       aria-disabled={sec?.isDisabled}
                       tabIndex={sec?.isDisabled ? -1 : undefined}
@@ -85,7 +83,7 @@ const Navbar = () => {
                       className={`${
                         sec.id === activeSection ? activeClass : ''
                       } ${
-                        sec?.isDisabled ? 'text-gray-400' : ''
+                        sec?.isDisabled ? 'text-grey' : ''
                       } hover:text-primary transition hover:cursor-pointer`}
                     >
                       {sec.name}
