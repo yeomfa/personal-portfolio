@@ -1,5 +1,14 @@
 [
   {
+    "id": 5,
+    "imagePath": "/covers/pany-ecommerce.webp",
+    "title": "Pany E-Commerce",
+    "technologies": ["react", "tailwindcss", "nodejs", "express", "mongodb"],
+    "description": "Full-stack e-commerce application for artisanal bakery products featuring a modern UI, shopping cart functionality, and comprehensive admin dashboard.",
+    "repositoryPath": "https://github.com/yeomfa/pany-ecommerce",
+    "liveSitePath": ""
+  },
+  {
     "id": 1,
     "imagePath": "/covers/nexsh-cover.webp",
     "title": "Nexsh",
