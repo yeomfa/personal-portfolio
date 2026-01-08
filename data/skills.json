@@ -73,11 +73,6 @@
         "id": "mysql",
         "name": "MySQL",
         "icon": "/icons/technologies/mysql.svg"
-      },
-      {
-        "id": "supabase",
-        "name": "Supabase",
-        "icon": "/icons/technologies/supabase.svg"
       }
     ]
   },
