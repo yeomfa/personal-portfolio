@@ -11,5 +11,5 @@ export enum Section {
 
 export enum Profile {
   'GitHub' = 'https://github.com/yeomfa',
-  'LinkedIn' = 'https://linkedin.com/in/yeomfa',
+  'LinkedIn' = 'https://linkedin.com/in/yeomfa-software-engineer',
 }
